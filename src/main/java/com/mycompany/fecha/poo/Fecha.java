@@ -4,12 +4,14 @@ import java.util.HashMap;
 
 public class Fecha {
     
+    //ATRIBUTO
     int dia;
     int mes;
     int anio;
-    HashMap <Integer, String> mesNuevo = new HashMap<>();
-
-
+    
+    //MÉTODOS
+    
+    //Complejidad temporal: O(1) Tiempo Constante
     
     public Fecha(int dia, int mes, int anio){
         this.dia = dia;
@@ -17,9 +19,13 @@ public class Fecha {
         this.anio = anio;
     }
     
+    //Complejidad temporal: O(1) Tiempo Constante
+    
     String fechaCorta(){
     return (dia+"/"+mes+"/"+anio);
     }
+    
+    //Complejidad temporal: O(1) Tiempo Constante
     
     Boolean validarFecha(){
         if (dia<1 || dia>31) {
@@ -40,7 +46,12 @@ public class Fecha {
         return true;
     }
     
+    HashMap <Integer, String> mesNuevo = new HashMap<>();  
+    
+    //Complejidad temporal: O(1) Tiempo Constante
+
     String mesLetra(){
+
         mesNuevo.put(1, "Enero");
         mesNuevo.put(2, "Febrero");
         mesNuevo.put(3, "Marzo");
@@ -54,9 +65,12 @@ public class Fecha {
         mesNuevo.put(11, "Noviembre");
         mesNuevo.put(12, "Diciembre");
         
-
+        
         return mesNuevo.get(mes);
     }
+    
+    
+    //Complejidad temporal: O(1) Tiempo Constante
     
     String fechaLarga(){
     

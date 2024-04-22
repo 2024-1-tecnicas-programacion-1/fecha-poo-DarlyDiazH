@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class Principal {
     
+    //Complejidad temporal: O(1) Tiempo constante
+    
     public static void main(String[] args) {
         
         Scanner sc = new Scanner(System.in);
@@ -25,6 +27,5 @@ public class Principal {
             System.out.println("La fecha es invalida");
         }
         
-
     }
 }
